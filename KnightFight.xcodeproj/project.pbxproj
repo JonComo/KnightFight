@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86482023195BB1500001DFEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482022195BB1500001DFEC /* Foundation.framework */; };
+		86482025195BB1500001DFEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482024195BB1500001DFEC /* CoreGraphics.framework */; };
+		86482027195BB1500001DFEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482026195BB1500001DFEC /* UIKit.framework */; };
+		86482029195BB1500001DFEC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482028195BB1500001DFEC /* SpriteKit.framework */; };
+		8648202F195BB1500001DFEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8648202D195BB1500001DFEC /* InfoPlist.strings */; };
+		86482031195BB1500001DFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482030195BB1500001DFEC /* main.m */; };
+		86482035195BB1500001DFEC /* KFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482034195BB1500001DFEC /* KFAppDelegate.m */; };
+		86482038195BB1500001DFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86482036195BB1500001DFEC /* Main.storyboard */; };
+		8648203B195BB1500001DFEC /* KFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648203A195BB1500001DFEC /* KFViewController.m */; };
+		8648203E195BB1500001DFEC /* KFMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648203D195BB1500001DFEC /* KFMyScene.m */; };
+		86482040195BB1500001DFEC /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8648203F195BB1500001DFEC /* Spaceship.png */; };
+		86482042195BB1500001DFEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86482041195BB1500001DFEC /* Images.xcassets */; };
+		86482049195BB1510001DFEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482048195BB1510001DFEC /* XCTest.framework */; };
+		8648204A195BB1510001DFEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482022195BB1500001DFEC /* Foundation.framework */; };
+		8648204B195BB1510001DFEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482026195BB1500001DFEC /* UIKit.framework */; };
+		86482053195BB1510001DFEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86482051195BB1510001DFEC /* InfoPlist.strings */; };
+		86482055195BB1510001DFEC /* KnightFightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482054195BB1510001DFEC /* KnightFightTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8648204C195BB1510001DFEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86482017195BB1500001DFEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8648201E195BB1500001DFEC;
+			remoteInfo = KnightFight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8648201F195BB1500001DFEC /* KnightFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86482022195BB1500001DFEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86482024195BB1500001DFEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86482026195BB1500001DFEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86482028195BB1500001DFEC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		8648202C195BB1500001DFEC /* KnightFight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnightFight-Info.plist"; sourceTree = "<group>"; };
+		8648202E195BB1500001DFEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86482030195BB1500001DFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86482032195BB1500001DFEC /* KnightFight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnightFight-Prefix.pch"; sourceTree = "<group>"; };
+		86482033195BB1500001DFEC /* KFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAppDelegate.h; sourceTree = "<group>"; };
+		86482034195BB1500001DFEC /* KFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAppDelegate.m; sourceTree = "<group>"; };
+		86482037195BB1500001DFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86482039195BB1500001DFEC /* KFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFViewController.h; sourceTree = "<group>"; };
+		8648203A195BB1500001DFEC /* KFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFViewController.m; sourceTree = "<group>"; };
+		8648203C195BB1500001DFEC /* KFMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMyScene.h; sourceTree = "<group>"; };
+		8648203D195BB1500001DFEC /* KFMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMyScene.m; sourceTree = "<group>"; };
+		8648203F195BB1500001DFEC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		86482041195BB1500001DFEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86482047195BB1510001DFEC /* KnightFightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightFightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86482048195BB1510001DFEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		86482050195BB1510001DFEC /* KnightFightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnightFightTests-Info.plist"; sourceTree = "<group>"; };
+		86482052195BB1510001DFEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86482054195BB1510001DFEC /* KnightFightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnightFightTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8648201C195BB1500001DFEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86482025195BB1500001DFEC /* CoreGraphics.framework in Frameworks */,
+				86482027195BB1500001DFEC /* UIKit.framework in Frameworks */,
+				86482029195BB1500001DFEC /* SpriteKit.framework in Frameworks */,
+				86482023195BB1500001DFEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86482044195BB1510001DFEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86482049195BB1510001DFEC /* XCTest.framework in Frameworks */,
+				8648204B195BB1510001DFEC /* UIKit.framework in Frameworks */,
+				8648204A195BB1510001DFEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86482016195BB1500001DFEC = {
+			isa = PBXGroup;
+			children = (
+				8648202A195BB1500001DFEC /* KnightFight */,
+				8648204E195BB1510001DFEC /* KnightFightTests */,
+				86482021195BB1500001DFEC /* Frameworks */,
+				86482020195BB1500001DFEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86482020195BB1500001DFEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8648201F195BB1500001DFEC /* KnightFight.app */,
+				86482047195BB1510001DFEC /* KnightFightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86482021195BB1500001DFEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86482022195BB1500001DFEC /* Foundation.framework */,
+				86482024195BB1500001DFEC /* CoreGraphics.framework */,
+				86482026195BB1500001DFEC /* UIKit.framework */,
+				86482028195BB1500001DFEC /* SpriteKit.framework */,
+				86482048195BB1510001DFEC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8648202A195BB1500001DFEC /* KnightFight */ = {
+			isa = PBXGroup;
+			children = (
+				86482033195BB1500001DFEC /* KFAppDelegate.h */,
+				86482034195BB1500001DFEC /* KFAppDelegate.m */,
+				86482036195BB1500001DFEC /* Main.storyboard */,
+				86482039195BB1500001DFEC /* KFViewController.h */,
+				8648203A195BB1500001DFEC /* KFViewController.m */,
+				8648203C195BB1500001DFEC /* KFMyScene.h */,
+				8648203D195BB1500001DFEC /* KFMyScene.m */,
+				8648203F195BB1500001DFEC /* Spaceship.png */,
+				86482041195BB1500001DFEC /* Images.xcassets */,
+				8648202B195BB1500001DFEC /* Supporting Files */,
+			);
+			path = KnightFight;
+			sourceTree = "<group>";
+		};
+		8648202B195BB1500001DFEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8648202C195BB1500001DFEC /* KnightFight-Info.plist */,
+				8648202D195BB1500001DFEC /* InfoPlist.strings */,
+				86482030195BB1500001DFEC /* main.m */,
+				86482032195BB1500001DFEC /* KnightFight-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8648204E195BB1510001DFEC /* KnightFightTests */ = {
+			isa = PBXGroup;
+			children = (
+				86482054195BB1510001DFEC /* KnightFightTests.m */,
+				8648204F195BB1510001DFEC /* Supporting Files */,
+			);
+			path = KnightFightTests;
+			sourceTree = "<group>";
+		};
+		8648204F195BB1510001DFEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86482050195BB1510001DFEC /* KnightFightTests-Info.plist */,
+				86482051195BB1510001DFEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8648201E195BB1500001DFEC /* KnightFight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86482058195BB1510001DFEC /* Build configuration list for PBXNativeTarget "KnightFight" */;
+			buildPhases = (
+				8648201B195BB1500001DFEC /* Sources */,
+				8648201C195BB1500001DFEC /* Frameworks */,
+				8648201D195BB1500001DFEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnightFight;
+			productName = KnightFight;
+			productReference = 8648201F195BB1500001DFEC /* KnightFight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86482046195BB1510001DFEC /* KnightFightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8648205B195BB1510001DFEC /* Build configuration list for PBXNativeTarget "KnightFightTests" */;
+			buildPhases = (
+				86482043195BB1510001DFEC /* Sources */,
+				86482044195BB1510001DFEC /* Frameworks */,
+				86482045195BB1510001DFEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8648204D195BB1510001DFEC /* PBXTargetDependency */,
+			);
+			name = KnightFightTests;
+			productName = KnightFightTests;
+			productReference = 86482047195BB1510001DFEC /* KnightFightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86482017195BB1500001DFEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jon Como";
+				TargetAttributes = {
+					86482046195BB1510001DFEC = {
+						TestTargetID = 8648201E195BB1500001DFEC;
+					};
+				};
+			};
+			buildConfigurationList = 8648201A195BB1500001DFEC /* Build configuration list for PBXProject "KnightFight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86482016195BB1500001DFEC;
+			productRefGroup = 86482020195BB1500001DFEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8648201E195BB1500001DFEC /* KnightFight */,
+				86482046195BB1510001DFEC /* KnightFightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8648201D195BB1500001DFEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8648202F195BB1500001DFEC /* InfoPlist.strings in Resources */,
+				86482042195BB1500001DFEC /* Images.xcassets in Resources */,
+				86482040195BB1500001DFEC /* Spaceship.png in Resources */,
+				86482038195BB1500001DFEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86482045195BB1510001DFEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86482053195BB1510001DFEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8648201B195BB1500001DFEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8648203B195BB1500001DFEC /* KFViewController.m in Sources */,
+				86482031195BB1500001DFEC /* main.m in Sources */,
+				86482035195BB1500001DFEC /* KFAppDelegate.m in Sources */,
+				8648203E195BB1500001DFEC /* KFMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86482043195BB1510001DFEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86482055195BB1510001DFEC /* KnightFightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8648204D195BB1510001DFEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8648201E195BB1500001DFEC /* KnightFight */;
+			targetProxy = 8648204C195BB1510001DFEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8648202D195BB1500001DFEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8648202E195BB1500001DFEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86482036195BB1500001DFEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86482037195BB1500001DFEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86482051195BB1510001DFEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86482052195BB1510001DFEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86482056195BB1510001DFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86482057195BB1510001DFEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86482059195BB1510001DFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KnightFight/KnightFight-Prefix.pch";
+				INFOPLIST_FILE = "KnightFight/KnightFight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8648205A195BB1510001DFEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KnightFight/KnightFight-Prefix.pch";
+				INFOPLIST_FILE = "KnightFight/KnightFight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8648205C195BB1510001DFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KnightFight.app/KnightFight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KnightFight/KnightFight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KnightFightTests/KnightFightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8648205D195BB1510001DFEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KnightFight.app/KnightFight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KnightFight/KnightFight-Prefix.pch";
+				INFOPLIST_FILE = "KnightFightTests/KnightFightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8648201A195BB1500001DFEC /* Build configuration list for PBXProject "KnightFight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86482056195BB1510001DFEC /* Debug */,
+				86482057195BB1510001DFEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86482058195BB1510001DFEC /* Build configuration list for PBXNativeTarget "KnightFight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86482059195BB1510001DFEC /* Debug */,
+				8648205A195BB1510001DFEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8648205B195BB1510001DFEC /* Build configuration list for PBXNativeTarget "KnightFightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8648205C195BB1510001DFEC /* Debug */,
+				8648205D195BB1510001DFEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86482017195BB1500001DFEC /* Project object */;
+}
