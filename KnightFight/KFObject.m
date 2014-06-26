@@ -18,6 +18,8 @@
     if (self = [super initWithTexture:tex]) {
         //init
         
+        _prefix = prefix;
+        
         self.xScale = 4;
         self.yScale = 4;
     }

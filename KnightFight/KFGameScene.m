@@ -50,13 +50,6 @@ static KFGameScene *game;
     background = [[KFBackground alloc] initWithSize:self.size];
     [self addChild:background];
     
-    //Add floor
-    KFObject *floor = [[KFObject alloc] initWithColor:[UIColor clearColor] size:CGSizeMake(self.size.width, 80)];
-    floor.position = CGPointMake(self.size.width/2, floor.size.height/2);
-    floor.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:floor.size];
-    floor.physicsBody.dynamic = NO;
-    [self addChild:floor];
-    
     [self addChild:_world];
     
     _player = [[KFCharacter alloc] initWithTexturePrefix:@"knight"];
@@ -64,19 +57,28 @@ static KFGameScene *game;
     [_world addChild:_player];
     [_player initPhysics];
     
-    SKSpriteNode *test = [[SKSpriteNode alloc] initWithColor:[UIColor redColor] size:CGSizeMake(40, 40)];
-    test.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:test.size];
-    test.position = CGPointMake(self.size.width*3/4, 200);
-    [_world addChild:test];
+    /*
+    KFCharacter *opponent = [[KFCharacter alloc] initWithTexturePrefix:@"knight"];
+    opponent.position = CGPointMake(_player.position.x + self.size.width/3, _player.position.y);
+    [_world addChild:opponent];
+    opponent.xScale = -4;
+    [opponent initPhysics]; */
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
-        //CGPoint location = [touch locationInNode:self];
+        CGPoint location = [touch locationInNode:self];
         
-        
+        if (location.x < self.size.width/2)
+        {
+            //blocking
+            
+        }else{
+            //Attacking
+            
+        }
     }
 }
 
@@ -84,7 +86,6 @@ static KFGameScene *game;
     /* Called before each frame is rendered */
     
     [self.player.physicsBody applyImpulse:CGVectorMake(2, 0)];
-    
 }
 
 -(void)didSimulatePhysics

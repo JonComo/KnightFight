@@ -10,4 +10,6 @@
 
 @interface KFCharacter : KFObject
 
+-(void)loadAnimations;
+
 @end
