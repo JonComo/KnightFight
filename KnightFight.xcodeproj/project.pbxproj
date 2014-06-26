@@ -15,15 +15,24 @@
 		86482031195BB1500001DFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482030195BB1500001DFEC /* main.m */; };
 		86482035195BB1500001DFEC /* KFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482034195BB1500001DFEC /* KFAppDelegate.m */; };
 		86482038195BB1500001DFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86482036195BB1500001DFEC /* Main.storyboard */; };
-		8648203B195BB1500001DFEC /* KFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648203A195BB1500001DFEC /* KFViewController.m */; };
-		8648203E195BB1500001DFEC /* KFMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648203D195BB1500001DFEC /* KFMyScene.m */; };
-		86482040195BB1500001DFEC /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8648203F195BB1500001DFEC /* Spaceship.png */; };
 		86482042195BB1500001DFEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86482041195BB1500001DFEC /* Images.xcassets */; };
 		86482049195BB1510001DFEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482048195BB1510001DFEC /* XCTest.framework */; };
 		8648204A195BB1510001DFEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482022195BB1500001DFEC /* Foundation.framework */; };
 		8648204B195BB1510001DFEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86482026195BB1500001DFEC /* UIKit.framework */; };
 		86482053195BB1510001DFEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86482051195BB1510001DFEC /* InfoPlist.strings */; };
 		86482055195BB1510001DFEC /* KnightFightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482054195BB1510001DFEC /* KnightFightTests.m */; };
+		86482060195BB1730001DFEC /* KFGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648205F195BB1730001DFEC /* KFGameViewController.m */; };
+		86482063195BB1820001DFEC /* KFGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482062195BB1820001DFEC /* KFGameScene.m */; };
+		86482066195BB2F90001DFEC /* KFMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482065195BB2F90001DFEC /* KFMenuViewController.m */; };
+		86482069195BB3810001DFEC /* KFCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482068195BB3810001DFEC /* KFCharacter.m */; };
+		8648206E195BB59C0001DFEC /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8648206C195BB59C0001DFEC /* knight.png */; };
+		86482073195BB5BC0001DFEC /* KFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86482072195BB5BC0001DFEC /* KFObject.m */; };
+		86482075195BBC250001DFEC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 86482074195BBC250001DFEC /* bg.png */; };
+		8648207A195BBE720001DFEC /* floorBrick0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86482076195BBE720001DFEC /* floorBrick0.png */; };
+		8648207B195BBE720001DFEC /* torch.png in Resources */ = {isa = PBXBuildFile; fileRef = 86482077195BBE720001DFEC /* torch.png */; };
+		8648207C195BBE720001DFEC /* wallDetail0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86482078195BBE720001DFEC /* wallDetail0.png */; };
+		8648207D195BBE720001DFEC /* wallDetail1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86482079195BBE720001DFEC /* wallDetail1.png */; };
+		86482080195BBEBC0001DFEC /* KFBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648207F195BBEBC0001DFEC /* KFBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,17 +58,30 @@
 		86482033195BB1500001DFEC /* KFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFAppDelegate.h; sourceTree = "<group>"; };
 		86482034195BB1500001DFEC /* KFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFAppDelegate.m; sourceTree = "<group>"; };
 		86482037195BB1500001DFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86482039195BB1500001DFEC /* KFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFViewController.h; sourceTree = "<group>"; };
-		8648203A195BB1500001DFEC /* KFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFViewController.m; sourceTree = "<group>"; };
-		8648203C195BB1500001DFEC /* KFMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMyScene.h; sourceTree = "<group>"; };
-		8648203D195BB1500001DFEC /* KFMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMyScene.m; sourceTree = "<group>"; };
-		8648203F195BB1500001DFEC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		86482041195BB1500001DFEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86482047195BB1510001DFEC /* KnightFightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightFightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86482048195BB1510001DFEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		86482050195BB1510001DFEC /* KnightFightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnightFightTests-Info.plist"; sourceTree = "<group>"; };
 		86482052195BB1510001DFEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86482054195BB1510001DFEC /* KnightFightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnightFightTests.m; sourceTree = "<group>"; };
+		8648205E195BB1730001DFEC /* KFGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFGameViewController.h; sourceTree = "<group>"; };
+		8648205F195BB1730001DFEC /* KFGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFGameViewController.m; sourceTree = "<group>"; };
+		86482061195BB1820001DFEC /* KFGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFGameScene.h; sourceTree = "<group>"; };
+		86482062195BB1820001DFEC /* KFGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFGameScene.m; sourceTree = "<group>"; };
+		86482064195BB2F90001DFEC /* KFMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMenuViewController.h; sourceTree = "<group>"; };
+		86482065195BB2F90001DFEC /* KFMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFMenuViewController.m; sourceTree = "<group>"; };
+		86482067195BB3810001DFEC /* KFCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFCharacter.h; sourceTree = "<group>"; };
+		86482068195BB3810001DFEC /* KFCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFCharacter.m; sourceTree = "<group>"; };
+		8648206C195BB59C0001DFEC /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knight.png; sourceTree = "<group>"; };
+		86482071195BB5BC0001DFEC /* KFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFObject.h; sourceTree = "<group>"; };
+		86482072195BB5BC0001DFEC /* KFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFObject.m; sourceTree = "<group>"; };
+		86482074195BBC250001DFEC /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		86482076195BBE720001DFEC /* floorBrick0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floorBrick0.png; sourceTree = "<group>"; };
+		86482077195BBE720001DFEC /* torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torch.png; sourceTree = "<group>"; };
+		86482078195BBE720001DFEC /* wallDetail0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallDetail0.png; sourceTree = "<group>"; };
+		86482079195BBE720001DFEC /* wallDetail1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallDetail1.png; sourceTree = "<group>"; };
+		8648207E195BBEBC0001DFEC /* KFBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFBackground.h; sourceTree = "<group>"; };
+		8648207F195BBEBC0001DFEC /* KFBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +143,16 @@
 		8648202A195BB1500001DFEC /* KnightFight */ = {
 			isa = PBXGroup;
 			children = (
+				8648206B195BB59C0001DFEC /* media */,
 				86482033195BB1500001DFEC /* KFAppDelegate.h */,
 				86482034195BB1500001DFEC /* KFAppDelegate.m */,
 				86482036195BB1500001DFEC /* Main.storyboard */,
-				86482039195BB1500001DFEC /* KFViewController.h */,
-				8648203A195BB1500001DFEC /* KFViewController.m */,
-				8648203C195BB1500001DFEC /* KFMyScene.h */,
-				8648203D195BB1500001DFEC /* KFMyScene.m */,
-				8648203F195BB1500001DFEC /* Spaceship.png */,
+				86482061195BB1820001DFEC /* KFGameScene.h */,
+				86482062195BB1820001DFEC /* KFGameScene.m */,
+				8648207E195BBEBC0001DFEC /* KFBackground.h */,
+				8648207F195BBEBC0001DFEC /* KFBackground.m */,
+				8648206A195BB5930001DFEC /* View */,
+				86482070195BB5A80001DFEC /* Objects */,
 				86482041195BB1500001DFEC /* Images.xcassets */,
 				8648202B195BB1500001DFEC /* Supporting Files */,
 			);
@@ -162,6 +186,41 @@
 				86482051195BB1510001DFEC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8648206A195BB5930001DFEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86482064195BB2F90001DFEC /* KFMenuViewController.h */,
+				86482065195BB2F90001DFEC /* KFMenuViewController.m */,
+				8648205E195BB1730001DFEC /* KFGameViewController.h */,
+				8648205F195BB1730001DFEC /* KFGameViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8648206B195BB59C0001DFEC /* media */ = {
+			isa = PBXGroup;
+			children = (
+				86482076195BBE720001DFEC /* floorBrick0.png */,
+				86482077195BBE720001DFEC /* torch.png */,
+				86482078195BBE720001DFEC /* wallDetail0.png */,
+				86482079195BBE720001DFEC /* wallDetail1.png */,
+				86482074195BBC250001DFEC /* bg.png */,
+				8648206C195BB59C0001DFEC /* knight.png */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		86482070195BB5A80001DFEC /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				86482071195BB5BC0001DFEC /* KFObject.h */,
+				86482072195BB5BC0001DFEC /* KFObject.m */,
+				86482067195BB3810001DFEC /* KFCharacter.h */,
+				86482068195BB3810001DFEC /* KFCharacter.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +300,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86482075195BBC250001DFEC /* bg.png in Resources */,
 				8648202F195BB1500001DFEC /* InfoPlist.strings in Resources */,
 				86482042195BB1500001DFEC /* Images.xcassets in Resources */,
-				86482040195BB1500001DFEC /* Spaceship.png in Resources */,
+				8648206E195BB59C0001DFEC /* knight.png in Resources */,
+				8648207D195BBE720001DFEC /* wallDetail1.png in Resources */,
 				86482038195BB1500001DFEC /* Main.storyboard in Resources */,
+				8648207C195BBE720001DFEC /* wallDetail0.png in Resources */,
+				8648207B195BBE720001DFEC /* torch.png in Resources */,
+				8648207A195BBE720001DFEC /* floorBrick0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8648203B195BB1500001DFEC /* KFViewController.m in Sources */,
+				86482069195BB3810001DFEC /* KFCharacter.m in Sources */,
+				86482066195BB2F90001DFEC /* KFMenuViewController.m in Sources */,
+				86482080195BBEBC0001DFEC /* KFBackground.m in Sources */,
+				86482073195BB5BC0001DFEC /* KFObject.m in Sources */,
+				86482060195BB1730001DFEC /* KFGameViewController.m in Sources */,
 				86482031195BB1500001DFEC /* main.m in Sources */,
 				86482035195BB1500001DFEC /* KFAppDelegate.m in Sources */,
-				8648203E195BB1500001DFEC /* KFMyScene.m in Sources */,
+				86482063195BB1820001DFEC /* KFGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
