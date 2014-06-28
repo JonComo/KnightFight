@@ -10,6 +10,12 @@
 
 @interface KFCharacter : KFObject
 
+@property BOOL isBlocking;
+@property BOOL isAttacking;
+
 -(void)loadAnimations;
+
+-(void)block;
+-(void)attack;
 
 @end

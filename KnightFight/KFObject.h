@@ -18,4 +18,6 @@
 
 -(void)update:(CFTimeInterval)currentTime;
 
+-(void)die;
+
 @end

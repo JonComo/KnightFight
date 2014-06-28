@@ -37,4 +37,9 @@
     
 }
 
+-(void)die
+{
+    [self removeFromParent];
+}
+
 @end

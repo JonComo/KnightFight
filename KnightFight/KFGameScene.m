@@ -57,12 +57,26 @@ static KFGameScene *game;
     [_world addChild:_player];
     [_player initPhysics];
     
-    /*
-    KFCharacter *opponent = [[KFCharacter alloc] initWithTexturePrefix:@"knight"];
-    opponent.position = CGPointMake(_player.position.x + self.size.width/3, _player.position.y);
-    [_world addChild:opponent];
-    opponent.xScale = -4;
-    [opponent initPhysics]; */
+    _player.physicsBody.velocity = CGVectorMake(60, 0);
+    
+    [self spawnNext];
+}
+
+-(void)spawnNext
+{
+    [self runAction:[SKAction waitForDuration:4] completion:^{
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            KFCharacter *opponent = [[KFCharacter alloc] initWithTexturePrefix:@"knight"];
+            opponent.position = CGPointMake(_player.position.x + self.size.width, _player.position.y + 10);
+            opponent.xScale = -4;
+            [self.world addChild:opponent];
+            [opponent initPhysics];
+        });
+        
+        
+        [self spawnNext];
+    }];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -74,10 +88,10 @@ static KFGameScene *game;
         if (location.x < self.size.width/2)
         {
             //blocking
-            
+            [self.player block];
         }else{
             //Attacking
-            
+            [self.player attack];
         }
     }
 }
@@ -90,7 +104,7 @@ static KFGameScene *game;
 
 -(void)didSimulatePhysics
 {
-    CGPoint offset = CGPointMake(-self.player.position.x + self.size.width/2, background.position.y);
+    CGPoint offset = CGPointMake(-self.player.position.x + self.size.width/4, background.position.y);
     
     background.position = offset;
     self.world.position = offset;
