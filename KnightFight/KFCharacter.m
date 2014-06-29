@@ -55,7 +55,7 @@
     KFGameScene *game = [KFGameScene shared];
     
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(ABS(self.size.width*4/5), ABS(self.size.height*4/5))];
-    //self.physicsBody.allowsRotation = NO;
+    self.physicsBody.allowsRotation = NO;
     
     wheel = [[SKSpriteNode alloc] initWithColor:[UIColor clearColor] size:CGSizeMake(ABS(self.size.width), ABS(self.size.width))];
     wheel.position = CGPointMake(self.position.x, self.position.y);
@@ -78,17 +78,23 @@
         weakSelf.isBlocking = NO;
     }];
     
+    [self runAction:[SKAction playSoundFileNamed:@"block.wav" waitForCompletion:NO]];
+    
     //Find any object infront
-    [self runAction:[SKAction waitForDuration:0.2] completion:^{
-        KFObject *object = [self objectInFront];
+    KFObject *object = [self objectInFront];
+    if (object)
+    {
+        [KFEffect showEffect:KFEffectTypeSparks atPosition:CGPointMake(object.position.x, object.position.y)];
         [object.physicsBody applyImpulse:CGVectorMake((self.xScale > 0 ? 1 : -1) * 200, 0)];
-    }];
+    }
 }
 
 -(void)die
 {
     [[KFGameScene shared].physicsWorld removeJoint:jointWheel];
     [wheel removeFromParent];
+    
+    [self.parent runAction:[SKAction playSoundFileNamed:@"die.wav" waitForCompletion:NO]];
     
     [super die];
 }
@@ -110,11 +116,15 @@
         weakSelf.isAttacking = NO;
     }];
     
+    [self runAction:[SKAction playSoundFileNamed:@"slash.wav" waitForCompletion:NO]];
+    
     //Find any object infront
-    [self runAction:[SKAction waitForDuration:0.2] completion:^{
-        KFObject *object = [self objectInFront];
+    KFObject *object = [self objectInFront];
+    if (object)
+    {
+        [KFEffect showEffect:KFEffectTypeBlood atPosition:object.position];
         [object die];
-    }];
+    }
 }
 
 -(KFObject *)objectInFront

@@ -69,7 +69,7 @@ static KFGameScene *game;
         dispatch_async(dispatch_get_main_queue(), ^{
             KFCharacter *opponent = [[KFCharacter alloc] initWithTexturePrefix:@"knight"];
             opponent.position = CGPointMake(_player.position.x + self.size.width, _player.position.y + 10);
-            opponent.xScale = -4;
+            opponent.xScale *= -1;
             [self.world addChild:opponent];
             [opponent initPhysics];
         });

@@ -17,4 +17,5 @@
     #import "KFGameViewController.h"
     #import "KFGameScene.h"
     #import "KFObject.h"
+    #import "KFEffect.h"
 #endif

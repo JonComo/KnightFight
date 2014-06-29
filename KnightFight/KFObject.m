@@ -20,8 +20,8 @@
         
         _prefix = prefix;
         
-        self.xScale = 4;
-        self.yScale = 4;
+        self.xScale = 3;
+        self.yScale = 3;
     }
     
     return self;

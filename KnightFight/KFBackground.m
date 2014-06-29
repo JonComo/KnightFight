@@ -26,7 +26,7 @@
         //floor tiles
         for (int i = 0; i<8; i++) {
             KFObject *floor = [[KFObject alloc] initWithTexturePrefix:@"floorBrick0"];
-            floor.position = CGPointMake(size.width/4 * (i + 2) - size.width/2, floor.size.height/2 - 10);
+            floor.position = CGPointMake(size.width/5 * (i + 2) - size.width/2, floor.size.height/2 - 10);
             floor.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:floor.size];
             floor.physicsBody.dynamic = NO;
             [self addChild:floor];
